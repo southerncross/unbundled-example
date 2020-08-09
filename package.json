@@ -20,13 +20,12 @@
     "@babel/core": "^7.11.1",
     "@babel/preset-react": "^7.10.4",
     "@babel/types": "^7.11.0",
+    "babel-plugin-transform-commonjs": "^1.1.6",
     "express": "^4.17.1",
     "http-server": "^0.12.3",
     "lodash": "^4.17.19",
+    "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  },
-  "dependencies": {
-    "nodemon": "^2.0.4"
   }
 }
