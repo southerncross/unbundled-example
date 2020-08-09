@@ -18,6 +18,9 @@ const app = express()
 app.use('/client/*', (req, res) => {
   const filepath = path.join(__dirname, req.baseUrl)
   const { code } = babel.transformFileSync(filepath, {
+    presets: [
+      '@babel/preset-react'
+    ],
     plugins: [
       {
         visitor: {
@@ -68,7 +71,11 @@ app.use('/__mokapack__/*', (req, res) => {
       {
         visitor: {
           ImportDeclaration(babelPath) {
-            babelPath.node.source.value = path.join('/__mokapack__/', path.dirname(relativeFilepath), babelPath.node.source.value)
+            if (babelPath.node.source.value.match(/^[./]/)) {
+              babelPath.node.source.value = path.join('/__mokapack__/', path.dirname(relativeFilepath), babelPath.node.source.value)
+            } else {
+              babelPath.node.source.value = '/__mokapack__/' + babelPath.node.source.value
+            }
           }
         }
       }
