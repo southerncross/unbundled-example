@@ -1,4 +1,4 @@
-import { hello } from './b.js'
+const { hello } = require('./b.js')
 import './c.css'
 
 console.log('a')

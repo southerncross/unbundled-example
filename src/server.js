@@ -29,7 +29,8 @@ app.use('/client/*', (req, res) => {
             }
           }
         }
-      }
+      },
+      'transform-commonjs'
     ]
   })
 
