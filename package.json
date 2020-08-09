@@ -4,7 +4,7 @@
   "description": "unbundled轮子仓库",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx nodemon src/server.js"
   },
   "repository": {
     "type": "git",
