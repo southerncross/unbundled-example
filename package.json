@@ -21,10 +21,10 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/types": "^7.11.0",
     "express": "^4.17.1",
+    "http-server": "^0.12.3",
     "lodash": "^4.17.19",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "sirv": "^1.0.5"
+    "react-dom": "^16.13.1"
   },
   "dependencies": {
     "nodemon": "^2.0.4"
