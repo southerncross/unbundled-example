@@ -4,7 +4,7 @@
   "description": "unbundled轮子仓库",
   "main": "index.js",
   "scripts": {
-    "dev": "npx http-server ./src -p 5500"
+    "dev": "npx http-server ./src -p 5600"
   },
   "repository": {
     "type": "git",
